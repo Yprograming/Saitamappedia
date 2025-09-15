@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拍手かっさい たまげる SAITAMAP!!</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <a href="index.html"><img src="img/logo.bmp" width="600"heigeit="400"></a>
+    <img src="img/キャラクターアニメ.gif"width="700">
+    <br><br>
+    <a href="chichibu.html"><img src="img/秩父地域.png" width="300" heigeit="1318"></a>
+    <a href="hokubu.html"><img src="img/北部地域.png" width="300" heigeit="1318"></a>
+    <a href="seibu.html"><img src="img/西部地域.png" width="300" heigeit="1318"></a>
+    <a href="chuo.html"><img src="img/中央地域.png" width="300" heigeit="1318"></a>
+    <a href="tobu.html"><img src="img/東部地域.png" width="300" heigeit="1318"></a>
+    <br>
+    <br>
+    <br>
+    <h1 class="title">・拍手かっさい たまげる SAITAMAPについて・</h1>
+    <br>
+    <h1>埼玉県には全国最多の40の市と、22の町、1つの村があり、それぞれ特色があって、とても魅力的です。</h1>
+    <h1>しかし、市町村の数が多いこともあり、自分が住んでいる市以外は形や位置があまりわからないことに気付きました。</h1>
+    <h1>そこで、市町村の形を一つ一つキャラクター化することで、誰でも楽しく市町村の形や位置を覚えることができると思い、このSAITAMAPを作成しました。</h1>
+    <h1>自分の推しのキャラクターを見つけたり、クイズに答えたりしながら、楽しく埼玉県について知ってもらえたら嬉しいです。</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="changeimage()">☟地図の切替</button>
+    
+    <img id="click" src="img/saitamap.png"width="1500">
+    <br>
+    <br>
+
+    <a href=""><img src="img/トップに戻る.png" width="394" heigeit="1318"></a><br>
+    <a href="shutten.html">参考文献と使ったフリー素材</a>
+    <h3>©2025 HAKUSHU KASSAI TAMAGERU SAITAMAP All rights reserved.</h3>
+   </body>
+    <script>
+       const img = ["img/saitamap.png","img/saitamaken.png"];
+       let currentindex = 0;
+       function changeimage() {
+        currentindex = (currentindex + 1)% img.length;
+        document.getElementById("click").src = img[currentindex];
+      }
+    </script>
+</html>

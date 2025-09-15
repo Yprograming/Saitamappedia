@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(214, 249, 249);
+}
+.chichibuchiiki{
+    background-color: #e0ffb4;
+}
+.seibuchiiki{
+    background-color: #f6f476;
+}
+.hokubuchiiki{
+    background-color: #f6d876;
+}
+.tobuchiiki{
+    background-color: #a9ebf4;
+}
+.title{
+    font-size: 50px;
+}
+button{
+    width: 300px;
+    height: 75px;
+    font-size: 40px;
+}
+a {
+    text-decoration: none; /* 下線を消す */
+}
+.red{
+    color: rgb(255, 0, 0);
+}

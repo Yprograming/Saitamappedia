@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中央地域</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <a href="index.html"><img src="img/logo.bmp" width="600"heigeit="400"></a>
+    <img src="img/キャラクターアニメ.gif"width="700"><br>
+    <a href="chichibu.html"><img src="img/秩父地域.png" width="350" heigeit="1318"></a>
+    <a href="hokubu.html"><img src="img/北部地域.png" width="350" heigeit="1318"></a>
+    <a href="seibu.html"><img src="img/西部地域.png" width="350" heigeit="1318"></a>
+    <a href="tobu.html"><img src="img/東部地域.png" width="350" heigeit="1318"></a>
+    <br>
+    <br>
+    <br>
+    <h1 class="title">・キャラクターから市町村あてクイズ　中央地域・</h1>
+    <br>
+    <h1>これらのキャラクターは、どこの市町村でしょう？</h1>
+    <h1>キャラクターがつぶやいているヒントも参考にして考えてみてください。</h1>
+    <h1>画面を下にスクロールするとSAITAMAPもあります！
+    <h1>キャラクターをクリックすると、答えがわかります。</h1>
+    <br>
+    <br>
+    <br>
+    <a href="wait.html?url=https://www.city.kounosu.saitama.jp&answer=鴻巣市">
+    <img src="img/トリ.png" width="400" height="330">
+    </a>
+    <a href="wait.html?url=https://www.city.kitamoto.lg.jp/&answer=北本市">
+    <img src="img/うさぎ.png" width="400" height="330">
+    </a>
+    <a href="wait.html?url=https://www.city.okegawa.lg.jp/&answer=桶川市">
+    <img src="img/リス.png" width="400" height="330">
+    </a>
+    <br>
+    <br>
+    <br>
+    <a href="wait.html?url=https://www.town.saitama-ina.lg.jp/&answer=伊奈町">
+    <img src="img/えだまめ.png" width="300" height="292">
+    </a>
+    <a href="wait.html?url=https://www.city.ageo.lg.jp/&answer=上尾市">
+    <img src="img/ゴリラ.png" width="500" height="315">
+    </a>
+    <a href="wait.html?url=https://www.city.saitama.lg.jp/index.html&answer=さいたま市">
+    <img src="img/ジャックオランタン.png" width="400" height="374">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="wait.html?url=https://www.city.toda.saitama.jp/&answer=戸田市">
+    <img src="img/にんじん.png" width="400" height="342">
+    </a>
+    <a href="wait.html?url=https://www.city.warabi.saitama.jp/&answer=蕨市">
+    <img src="img/すいか.png" width="400" height="342">
+    </a>
+    <a href="wait.html?url=https://www.city.kawaguchi.lg.jp/&answer=川口市">
+    <img src="img/横顔.png" width="400" height="342">
+    </a>
+    <button onclick="changeimage()">☟地図の切替</button>
+    <img id="click" src="img/saitamap.png" alt="Image" width="1300">
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="index.html"><img src="img/ホームに戻る.png" width="394" heigeit="1318"></a>
+    <a href=""><img src="img/トップに戻る.png" width="394" heigeit="1318"></a>
+  <h3>©2025 HAKUSHU KASSAI TAMAGERU SAITAMAP All rights reserved.</h3>
+   </body>
+    <script>
+       const img = ["img/saitamap.png","img/saitamaken.png"];
+       let currentindex = 0;
+       function changeimage() {
+        currentindex = (currentindex + 1)% img.length;
+        document.getElementById("click").src = img[currentindex];
+      }
+    </script>
+</html>
