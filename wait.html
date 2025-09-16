@@ -7,43 +7,45 @@
 </head>
 <body>
   <h1>正解は</h1>
-  <h1 id="answer" class="red"></h1> <!-- 正解を表示するための要素 -->
+  <h1 class="red" style="display:inline-flex; align-items: baseline;">
+  <span id="answer"></span>
+  <span id="hurigana" style="margin-left: 10px;"></span>
+</h1>
   <h1>でした！！</h1>
   <h2>以下のボタンを押すと正解の</h2><h2 id="answer2"></h2><h2>のホームページに移動します。</h2>
-  <button id="goBtn">移動する</button>
-  <h2 id="linkContainer"></h2> <!-- リンクを表示するための要素 -->
+  <button id="gobuttun">移動する</button>
+  <h2 id="linkContainer"></h2>
   <button id="backButton">前に戻る</button>
+
+
   <script>
-    // URLパラメータから遷移先と正解を取得
     const params = new URLSearchParams(window.location.search);
     const targetUrl = params.get("url");
-    const correctAnswer = params.get("answer"); // 正解をURLパラメータから取得
+    const correctAnswer = params.get("answer"); 
+    const hurigana = params.get("hurigana"); 
 
-    // 正解を表示する
     if (correctAnswer) {
       document.getElementById("answer").textContent = correctAnswer;
-    } else {
-      document.getElementById("answer").textContent = "正解が指定されていません。";
     }
+
     if (correctAnswer) {
       document.getElementById("answer2").textContent = correctAnswer;
-    } else {
-      document.getElementById("answer2").textContent = "正解が指定されていません。";
     }
 
-    // リンクを表示する
+    if (hurigana) {
+      document.getElementById("hurigana").textContent = `(${hurigana})`;
+    } 
+
+
+  
     const linkContainer = document.getElementById("linkContainer");
     if (targetUrl) {
-      linkContainer.innerHTML = `遷移先: <a href="${targetUrl}">${targetUrl}</a>`;
-    } else {
-      linkContainer.innerHTML = "遷移先が指定されていません。";
+      linkContainer.innerHTML = `移動先: <a href="${targetUrl}">${targetUrl}</a>`;
     }
 
-    document.getElementById("goBtn").addEventListener("click", () => {
+    document.getElementById("gobuttun").addEventListener("click", () => {
       if (targetUrl) {
         window.location.href = targetUrl;
-      } else {
-        alert("遷移先が指定されていません。");
       }
     });
             document.getElementById("backButton").addEventListener("click", function() {
