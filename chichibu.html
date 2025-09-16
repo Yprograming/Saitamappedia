@@ -18,29 +18,30 @@
     <br>
     <h1 class="title">・キャラクターから市町村あてクイズ　秩父地域・</h1>
     <br>
+    <h6>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　しちょうそん</h6>
     <h1>これらのキャラクターは、どこの市町村でしょう？</h1>
     <h1>キャラクターがつぶやいているヒントも参考にして考えてみてください。</h1>
     <h1>画面を下にスクロールするとSAITAMAPもあります！
     <h1>キャラクターをクリックすると、正解がわかります。</h1>
     <br>
     <br>
-    <a href="wait.html?url=https://city.chichibu.lg.jp/&answer=秩父市">
+    <a href="wait.html?url=https://city.chichibu.lg.jp/&answer=秩父市&hurigana=ちちぶし">
     <img src="img/くじら.png" width="500" height="400">
     </a>
-    <a href="wait.html?url=https://www.town.ogano.lg.jp/&answer=小鹿野町">
+    <a href="wait.html?url=https://www.town.ogano.lg.jp/&answer=小鹿野町&hurigana=おがのまち">
     <img src="img/たいやき.png" width="450" height="400">
     </a>
-    <a href="wait.html?url=https://www.town.yokoze.saitama.jp/&answer=横瀬町">
+    <a href="wait.html?url=https://www.town.yokoze.saitama.jp/&answer=横瀬町&hurigana=よこぜまち">
     <img src="img/マンボウ.png" width="400" height="300">
     </a>
     <br>
     <br>
     <br>
     <br>
-    <a href="wait.html?url=https://www.town.minano.saitama.jp/&answer=皆野町">
+    <a href="wait.html?url=https://www.town.minano.saitama.jp/&answer=皆野町&hurigana=みなのまち">
     <img src="img/ゾウ.png" width="400" height="300">
     </a>
-    <a href="wait.html?url=https://www.town.nagatoro.saitama.jp/&answer=長瀞町">
+    <a href="wait.html?url=https://www.town.nagatoro.saitama.jp/&answer=長瀞町&hurigana=ながとろまち">
     <img src="img/サンタクロース.png" width="400" height="400">
     </a>
     <br>
@@ -59,16 +60,11 @@
     <h3>©2025 HAKUSHU KASSAI TAMAGERU SAITAMAP All rights reserved.</h3>
    </body>
        <script>
-       const img = ["img/saitamap.png","http://www.floral-village.info/up/1758019714.png"];
+       const img = ["img/saitamap.png","img/saitamaken.png"];
        let currentindex = 0;
        function changeimage() {
         currentindex = (currentindex + 1)% img.length;
         document.getElementById("click").src = img[currentindex];
       }
     </script>
-
 </html>
-
-
-
-
