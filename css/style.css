@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(214, 249, 249);
+    background-color: rgb(214, 249, 249); 
+    text-align: center;
 }
 .chichibuchiiki{
     background-color: #e0ffb4;
@@ -22,8 +23,13 @@ button{
     font-size: 40px;
 }
 a {
-    text-decoration: none; /* 下線を消す */
+    text-decoration: none; 
 }
 .red{
     color: rgb(255, 0, 0);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
